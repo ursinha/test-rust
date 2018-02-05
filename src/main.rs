@@ -34,3 +34,16 @@ fn main() {
     }
     println!("Number of attempts: {}", attempts);
 }
+
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn test_one() {
+        assert_eq!(2 + 2, 4);
+    }
+
+    #[test]
+    fn test_two() {
+        assert_ne!(2 + 2, 5);
+    }
+}
